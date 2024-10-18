@@ -1,0 +1,65 @@
+.container {
+  --border-radius: 10px;
+  --color-light: #29e52d;
+  --color-dark: #d82228;
+  --color-neutral: #ffff00;
+  --color-shadow-light: rgba(41, 229, 45, .4);
+  --color-shadow-dark: rgba(216, 34, 40, .4);
+  --color-shadow-neutral: rgba(224, 224, 81, 0.4);
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: var(--spacing-medium);
+}
+
+.imgContainer {
+  position: relative;
+  width: 250px;
+  height: 450px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-black);
+  overflow: hidden;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  font-size: var(--font-size-sub-header);
+}
+
+.lightSide {
+  text-shadow: 0 0 5px currentColor;
+  color: var(--color-light);
+}
+
+.darkSide {
+  text-shadow: 0 0 5px currentColor;
+  color: var(--color-dark);
+}
+
+.neutral {
+  text-shadow: 0 0 5px currentColor;
+    color: var(--color-neutral);
+}
+
+.lightSide:hover {
+  box-shadow: 0 0 7px 2px var(--color-shadow-light);
+}
+.darkSide:hover {
+  box-shadow: 0 0 7px 2px var(--color-shadow-dark);
+}
+.neutral:hover {
+  box-shadow: 0 0 7px 2px var(--color-shadow-neutral);
+}

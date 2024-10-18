@@ -1,0 +1,26 @@
+:root {
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+
+  --font-family-main: sans-serif;
+  --font-bold: 600;
+
+  --border-radius-small: 3px;
+  --border-radius-medium: 6px;
+
+  --padding-small: 10px;
+  --transition: 0.4s;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #9c9c9c;
+  --color-lightgray: #dfe2df;
+  --color-blue: #6a83fb;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}

@@ -1,0 +1,35 @@
+.peopleList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  column-gap: var(--spacing-medium);
+  row-gap: calc(var(--spacing-medium)*2);
+}
+
+.peopleList__item {
+  max-width: 224px;
+  width: 100%;
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.peopleList__item a {
+  text-decoration: none;
+  color: var(--color-black);
+  text-align: center;
+}
+
+.peopleList__personPhoto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+}
+
+.peopleList__personName {
+  
+}

@@ -1,0 +1,27 @@
+.peopleNavigation {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.peopleNavigation__label {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.isDisabled {
+  pointer-events: none;
+  color: var(--color-gray);
+  border-color: var(--color-gray);
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.peopleNavigation__link {
+  text-decoration: none;
+}
+
+.peopleNavigation__link:has(.isDisabled) {
+  pointer-events: none;
+  cursor: not-allowed;
+}

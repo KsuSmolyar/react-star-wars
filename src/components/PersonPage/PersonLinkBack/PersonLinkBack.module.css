@@ -1,0 +1,16 @@
+.personLinkBack {
+  display: flex;
+  align-items: center;
+  gap: var(--spasing-extra-small);
+  font-weight: var(--bold);
+  margin-bottom: var(--spacing-large);
+  color: var(--color-yellow);
+  text-decoration: none;
+}
+
+.personLinkBack__img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  object-position: center center;
+}

@@ -1,0 +1,37 @@
+.personFilms {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+  margin: 0;
+  margin-left: var(--spacing-large);
+  color: var(--color-white);
+  list-style: none;
+  padding: var(--spacing-medium) 0;
+}
+
+.personFilms__item {
+  display: flex;
+  align-items: center;
+  gap: var(--spasing-extra-small);
+}
+
+.personFilms__itemEpisode {
+  padding: var(--spasing-extra-small);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-red);
+}
+
+.personFilms__itemColon {
+  font-weight: var(--font-bold);
+}
+
+.personFilms__itemTitle {
+  text-shadow: var(--text-shadow-yellow);
+}
+
+@media screen and (max-width: 1020px) {
+  .personFilms {
+    width: 100%;
+    margin: 0;
+  }
+}

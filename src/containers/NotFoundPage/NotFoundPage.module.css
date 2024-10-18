@@ -1,0 +1,17 @@
+.image {
+  width: 250px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.text {
+  margin-top: var(--spacing-large);
+  font-size: var(--font-size-sub-header);
+  color: var(--color-white);
+  text-align: center;
+  text-shadow: var(--text-shadow-blue);
+}
+
+.textUnderline {
+  text-decoration: underline;
+}

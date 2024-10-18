@@ -1,0 +1,7 @@
+.loading {
+  width: 120px;
+}
+
+.shadow {
+  filter: drop-shadow(0 0 2px #000);
+}
