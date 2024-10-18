@@ -7,7 +7,7 @@
 */
 
 export const changeCssVars = (theme: string) => {
-  const root = document.querySelector(":root");
+  const root: HTMLElement = document.querySelector(":root")!;
 
   const cssVars = ["header", "bgimage"];
 
