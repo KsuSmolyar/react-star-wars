@@ -14,12 +14,12 @@ const PeopleNavigation = ({ getResource, prevPage, nextPage, counterPage}: IPeop
 
   return (
     <div className={styles.peopleNavigation}>
-      <Link className={styles.peopleNavigation__link} to={`/people/?page=${counterPage-1}`}>
+      <Link className={styles.peopleNavigation__link} to={`/react-star-wars/people/?page=${counterPage - 1}`}>
         <UiButton isParagraph={true} className={classNames(styles.peopleNavigation__label, {
           [styles.isDisabled]: !prevPage
         })} onClick={handleChangePrev}>Previous</UiButton>
       </Link>
-      <Link className={styles.peopleNavigation__link} to={`/people/?page=${counterPage+1}`}>
+      <Link className={styles.peopleNavigation__link} to={`/react-star-wars/people/?page=${counterPage + 1}`}>
         <UiButton isParagraph={true} className={classNames(styles.peopleNavigation__label, !nextPage && styles.isDisabled)} onClick={handleChangeNext}>Next</UiButton>
       </Link>
     </div>

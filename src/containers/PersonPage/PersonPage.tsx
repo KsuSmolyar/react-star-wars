@@ -62,7 +62,7 @@ const PersonPage = ({setErrorApi}: IProps) => {
     }
 
     getPerson();
-  }, [id])
+  }, [id, setErrorApi, storeData])
   return (
     <>
     <PersonLinkBack/>

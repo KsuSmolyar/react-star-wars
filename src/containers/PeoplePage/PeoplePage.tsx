@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { getApiResource } from '../../utils/network';
 import { API_PEOPLE } from "../../constants/api";
 import { getPeopleId, getPeopleImage, getPeoplePageId } from "../../services/getPeopleData";
@@ -24,11 +24,12 @@ const PeoplePage = ({setErrorApi}: IProps) => {
   const [prevPage, setPrevPage] = useState<string>("");
   const [nextPage, setNextPage] = useState<string>("");
   const [counterPage, setCounterPage] = useState<number>(1);
+  console.log("people", people)
 
   const query = useQueryParams();
   const queryPage = query.get("page");
 
-  const getResource = async (url: string) => {
+  const getResource = useCallback(async (url: string) => {
     const res = await getApiResource(url);
 
     if (res) {
@@ -47,11 +48,11 @@ const PeoplePage = ({setErrorApi}: IProps) => {
     } else {
       setErrorApi?.(true);
     }
-  }
+  }, [setErrorApi])
 
   useEffect(() => {
     getResource(API_PEOPLE + queryPage);
-  }, []);
+  }, [getResource, queryPage]);
 
   return (
     <div className={styles.block}>

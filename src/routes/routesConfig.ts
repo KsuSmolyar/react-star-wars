@@ -7,38 +7,38 @@ import PersonPage  from "../containers/PersonPage";
 import SearchPage from "../containers/SearchPage";
 
 const routesConfig = [
-  { 
-    path: "/",
-    component: HomePage
+  {
+    path: "/react-star-wars",
+    component: HomePage,
   },
-  { 
-    path: "/people",
-    component: PeoplePage
+  {
+    path: "/react-star-wars/people",
+    component: PeoplePage,
   },
-  { 
-    path: "/search",
-    component: SearchPage
+  {
+    path: "/react-star-wars/search",
+    component: SearchPage,
   },
-  { 
-    path: "/fail",
-    component: ErrorMessage
+  {
+    path: "/react-star-wars/fail",
+    component: ErrorMessage,
   },
-  { 
-    path: "/people/:id",
-    component: PersonPage
+  {
+    path: "/react-star-wars/people/:id",
+    component: PersonPage,
   },
-  { 
-    path: "/not-found",
-    component: NotFoundPage
+  {
+    path: "/react-star-wars/not-found",
+    component: NotFoundPage,
   },
-  { 
-    path: "/favorites",
-    component: FavoritePage
+  {
+    path: "/react-star-wars/favorites",
+    component: FavoritePage,
   },
-  { 
+  {
     path: "*",
-    component: NotFoundPage
-  }
-]
+    component: NotFoundPage,
+  },
+];
 
 export default routesConfig;

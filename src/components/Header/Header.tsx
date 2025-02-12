@@ -35,11 +35,11 @@ const Header = () => {
     <header className={styles.header}>
       <img className={styles.logo} src={icon} alt="Star Wars"/>
       <ul className={styles.headerList}>
-        <li><NavLink to={"/"}>Home</NavLink></li>
-        <li><NavLink to={"/people/?page=1"}>People</NavLink></li>
-        <li><NavLink to={"/search"}>Search</NavLink></li>
-        <li><NavLink to={"/not-found"}>Not-found</NavLink></li>
-        <li><NavLink to={"/fail"}>Fail</NavLink></li>
+        <li><NavLink to={"/react-star-wars"}>Home</NavLink></li>
+        <li><NavLink to={"/react-star-wars/people/?page=1"}>People</NavLink></li>
+        <li><NavLink to={"/react-star-wars/search"}>Search</NavLink></li>
+        <li><NavLink to={"/react-star-wars/not-found"}>Not-found</NavLink></li>
+        <li><NavLink to={"/react-star-wars/fail"}>Fail</NavLink></li>
       </ul>
 
       <Favorite/>
