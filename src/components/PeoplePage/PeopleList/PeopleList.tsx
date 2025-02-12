@@ -12,7 +12,7 @@ const PeopleList = ({people}: IPeopleList) => {
       { people.map(({id, name, img}:{id:string, name:string, img: string}) => {
         return (
           <li className={styles.peopleList__item} key={id}>
-            <Link to={`/people/${id}`}>
+            <Link to={`/react-star-wars/people/${id}`}>
               <img className={styles.peopleList__personPhoto} src={img} alt={name}/>
               <p className={styles.peopleList__personName}>{name}</p>
             </Link>
